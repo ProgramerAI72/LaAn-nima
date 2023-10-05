@@ -8,7 +8,7 @@ namespace LaAnónima.Controllers
     [ApiController]
     public class EstanteriaController : Controller
     {
-        private readonly 
+       // private readonly 
         
     }
 }

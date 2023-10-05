@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using LaAnonima.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<LaAnonimaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LaAnonimaContext") ?? throw new InvalidOperationException("Connection string 'LaAnonimaContext' not found.")));
 
 // Add services to the container.
 

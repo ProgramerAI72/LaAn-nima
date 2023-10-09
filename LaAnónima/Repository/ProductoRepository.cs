@@ -13,23 +13,23 @@ namespace LaAnónima.Repository
             _context = context;
         }
 
-        //public Producto ObtenerProducto(string NombreDelProducto)
-        //{
+        public Producto ObtenerProducto(int productoId)
+        {
 
-        //    Producto NombreDelProducto = _context
-        //            .Producto
-        //            .Where(ddd => ddd.Id == NombreDelProducto)
-        //            .FirstOrDefault();
+            Producto Producto = _context
+                    .Producto
+                    .Where(ddd => ddd.Id == productoId)
+                    .FirstOrDefault();
 
-        //    NombreDelProducto.EstanteriaId = _context.Producto
-        //  .Where(elProducto => elProducto.Id == NombreDelProducto.NombreProducto)
-        //  .FirstOrDefault();
+            productoId.EstanteriaId = _context.Producto
+          .Where(elProducto => elProducto.Id == ProductoId.NombreProducto)
+          .FirstOrDefault();
 
-        //    return NombreDelProducto;
+            return Producto;
 
 
 
-        //}
+        }
 
     }
 }

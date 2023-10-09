@@ -22,7 +22,7 @@ namespace LaAnónima.Repository
                     .FirstOrDefault();
 
             productoId.EstanteriaId = _context.Producto
-          .Where(elProducto => elProducto.Id == ProductoId.NombreProducto)
+          .Where(elProducto => elProducto.Id == productoId.NombreProducto)
           .FirstOrDefault();
 
             return Producto;

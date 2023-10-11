@@ -2,7 +2,7 @@
 {
     public class Pasillo: ModeloBase
     {
-        public string Nombre { get; set; }
+        public string NombrePasillo { get; set; }
 
     }
 }

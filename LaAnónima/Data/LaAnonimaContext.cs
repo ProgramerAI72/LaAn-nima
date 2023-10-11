@@ -15,5 +15,7 @@ namespace LaAnonima.Data
         }
 
         public DbSet<LaAnónima.Models.Pasillo> Pasillo { get; set; } = default!;
+
+        public DbSet<LaAnónima.Models.Producto> Producto { get; set; } = default!;
     }
 }

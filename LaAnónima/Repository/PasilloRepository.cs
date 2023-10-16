@@ -8,10 +8,10 @@ namespace LaAnónima.Repository
 
         public int CrearPasillo(Pasillo pasillo) 
         {
-            Pasillo.Add(pasillo)
+            Pasillo.Add(pasillo);
             
 
-            return;
+            return pasillo;
         }
         
     }
